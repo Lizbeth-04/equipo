@@ -12,5 +12,7 @@ model Equipo{
   nombre  String
   ciudad  String
   fundado Int?
+  createdAt              DateTime           @default(now())
+  updateAt               DateTime           @updatedAt
 }
  
